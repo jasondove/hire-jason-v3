@@ -7,18 +7,18 @@ const Resume: React.FunctionComponent<T> = () => {
         <div>
             {resumeData.map((item) => {
                 return (
-                    <div key={item.company}>
-                        <div className="flex">
-                            <span className="mr-auto">{item.title}</span>
-                            <span>
+                    <div key={item.company} className="mb-2 p-2">
+                        <div className="flex mb-2">
+                            <span className="mr-auto text-base">{item.title}</span>
+                            <span className="italic text-sm">
                                 <span>{item.company}, </span>
                                 <span>{item.yearStart} - {item.yearEnd}</span>
                             </span>
                         </div>
-                        <ul>
+                        <ul className="text-sm">
                             {item.bullets.map((bullet) => {
                                 return (
-                                    <li key={bullet}>{bullet}</li>
+                                    <li key={bullet} className="mb-1">{bullet}</li>
                                 );
                             })}
                         </ul>
