@@ -1,13 +1,23 @@
 import React from 'react';
+import classNames from "classnames";
 
 import { resumeData } from './resume.config.tsx';
 
 const Resume: React.FunctionComponent<T> = () => {
+    // const hoverItem = React.useRef<number | null>(null);
+    const [hoverItem, setHoverItem] = React.useState<number | null>(null);
+
     return (
         <div>
-            {resumeData.map((item) => {
+            {resumeData.map((item, index) => {
                 return (
-                    <div key={item.company} className="mb-2 p-2">
+                    <div
+                        key={item.company}
+                        className={`mb-2 p-2 cursor-pointer ${hoverItem !== index && typeof hoverItem === 'number' && 'opacity-25'} transition-opacity duration-400`}
+                        onMouseEnter={() => setHoverItem(index)}
+                        onMouseLeave={() => setHoverItem(null)}
+                        onClick={() => console.log(hoverItem)}
+                    >
                         <div className="flex mb-2">
                             <span className="mr-auto text-base">{item.title}</span>
                             <span className="italic text-sm">
