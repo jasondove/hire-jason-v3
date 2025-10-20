@@ -60,6 +60,42 @@ const resumeData: Array<ResumeJob> = [
             'Projects were featured in The New York Post and The Rachael Ray Show.',
         ],
     },
+    {
+        title: 'IT Associate',
+        company: 'VCU Technology Services',
+        yearStart: 2006,
+        yearEnd: 2007,
+        techs: [],
+        bullets: [
+            'Utilized university database to manage security of several thousand user accounts.',
+            'Assisted customers with operating system, application, and hardware troubleshooting.',
+            "Helped manage the university’s IT ticketing system.",
+        ],
+    },
+    {
+        title: 'Team Leader',
+        company: 'Virginia Army National Guard',
+        yearStart: 2000,
+        yearEnd: 2006,
+        techs: [],
+        bullets: [
+            'Fostered teamwork in high-stress environments.',
+            'Instructed and evaluated staff.',
+            'Honorably discharged.',
+        ],
+    },
+    {
+        title: 'Child',
+        company: '',
+        yearStart: 1982,
+        yearEnd: 2000,
+        techs: [],
+        bullets: [
+            'Developed fine motor skills.',
+            'Instructed and evaluated staff.',
+            'Honorably discharged.',
+        ],
+    },
 ];
 
 export { resumeData, type ResumeJob };
