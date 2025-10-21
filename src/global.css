@@ -2,6 +2,7 @@
 
 @theme {
   --color-*: initial;
+  --color-black: #000;
   --color-text: #fff;
   --color-text-subtle: #ccc;
   --color-slate: #1d1e22;
@@ -15,6 +16,10 @@
 }
 
 body {
-  background-color: var(--color-slate);
+  /* Courtesy of https://www.magicpattern.design/tools/css-backgrounds */
+  opacity: 1;
+  background-image:  radial-gradient(#393f4d 0.9px, transparent 0.9px), radial-gradient(#777 0.9px, #1d1e22 0.9px);
+  background-size: 36px 36px;
+  background-position: 0 0,18px 18px;
 }
 

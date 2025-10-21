@@ -92,8 +92,7 @@ const resumeData: Array<ResumeJob> = [
         techs: [],
         bullets: [
             'Developed fine motor skills.',
-            'Instructed and evaluated staff.',
-            'Honorably discharged.',
+            'Learned to share.',
         ],
     },
 ];

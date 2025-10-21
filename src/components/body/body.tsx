@@ -5,7 +5,7 @@ import Resume from 'components/resume/resume.tsx';
 
 const Body: React.FunctionComponent<T> = () => {
     return (
-        <div className="md:w-[50%] md:py-24">
+        <div className="md:w-[50%] md:py-24 bg-slate">
             <section className="mb-16 text-text-subtle">
                 {bodyParagraphs.map((paragraph) => {
                     return (
