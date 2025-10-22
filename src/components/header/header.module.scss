@@ -8,18 +8,11 @@
 }
 
 .button:hover {
-  /*background: linear-gradient(
-    135deg,
-    #fff 33%,
-    rgba(255,255,255,0.4) 50%,
-    #fff 66%
-  ) var(--color-highlight);*/
-
   background: linear-gradient(
-          135deg,
-          var(--color-highlight) 33%,
-          rgba(255,255,255,0.4) 50%,
-          var(--color-highlight) 66%
+    135deg,
+    var(--color-highlight) 33%,
+    rgba(255, 255, 255, 0.4) 50%,
+    var(--color-highlight) 66%
   ) #fff;
 
   background-size: 300% 300%;
