@@ -1,0 +1,39 @@
+const src = 'split this data';
+
+const sSplit = src.split('\n');
+
+const dataTemp: Array<string> = [];
+sSplit.forEach((line) => {
+    if (line !== "" && line[0] !== '-') {
+        dataTemp.push(line);
+    }
+});
+
+const out: Array<string> = [];
+let date = '';
+let company = '';
+let title = '';
+let link = '';
+let lineCounter = 0;
+let lineOut = '';
+dataTemp.forEach((line) => {
+    if (Number.isInteger(parseInt(line.substring(0, 2)))) {
+        date = `${line}/25`;
+    } else {
+        if (lineCounter === 0) {
+            company = line;
+        } else if (lineCounter === 1) {
+            title = line;
+        } else {
+            link = line;
+        }
+
+        lineCounter += 1;
+        if (lineCounter > 2) {
+            lineOut = `${date}~${company}~${title}~${link}`;
+            out.push(lineOut);
+            lineCounter = 0;
+        }
+    }
+});
+return <div>{out.map((l) => <div>{l}</div>)}</div>;
