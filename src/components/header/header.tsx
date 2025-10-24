@@ -33,7 +33,7 @@ const Header: React.FunctionComponent = () => {
     };
 
     return (
-        <header className="pt-8 px-4 mb-12 md:mb-0 text-center md:text-left md:w-[50%] md:sticky md:top-0 md:max-h-screen md:flex md:flex-col md:py-24">
+        <header className="pt-8 px-4 mb-12 md:mb-0 text-center items-start md:text-left md:w-[50%] md:sticky md:top-0 md:max-h-screen md:flex md:flex-col md:py-24">
             <div className="text-4xl md:text-5xl text-text mb-3">Jason Dove</div>
             <div className="text-xl text-text mb-3">Full Stack Engineer</div>
             <p className="cursor-pointer select-none hidden md:block text-text-subtle mb-3" onClick={startTyping}>

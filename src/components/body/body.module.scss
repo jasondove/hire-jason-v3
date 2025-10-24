@@ -1,0 +1,9 @@
+.bodyParagraph a {
+  color: var(--color-text);
+  font-weight: bold;
+  transition: color 400ms;
+
+  &:hover {
+    color: var(--color-highlight);
+  }
+}

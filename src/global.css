@@ -4,13 +4,23 @@
   --color-*: initial;
   --color-black: #000;
   --color-text: #fff;
-  --color-text-subtle: #ccc;
+  --color-text-subtle: #dedede;
+  --color-text-subtle-2: #efefef;
   --color-slate: #1d1e22;
   --color-matte: #393f4d;
   --color-highlight: #feda6a;
 }
 
 :root {
+  --color-*: initial;
+  --color-black: #000;
+  --color-text: #fff;
+  --color-text-subtle: #dedede;
+  --color-text-subtle-2: #efefef;
+  --color-slate: #1d1e22;
+  --color-matte: #393f4d;
+  --color-highlight: #feda6a;
+
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }

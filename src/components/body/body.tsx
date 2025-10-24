@@ -1,7 +1,9 @@
 import React from 'react';
-import { bodyParagraphs } from './body.config.tsx';
+import classNames from 'classnames';
 import Resume from 'components/resume/resume.tsx';
 
+import { bodyParagraphs } from './body.config.tsx';
+import styles from './body.module.scss';
 
 const Body: React.FunctionComponent = () => {
     return (
@@ -10,7 +12,7 @@ const Body: React.FunctionComponent = () => {
                 <h3 className="block md:hidden ms-4 mb-4 font-bold text-text">About Me</h3>
                 {bodyParagraphs.map((paragraph) => {
                     return (
-                        <p key={paragraph} className="mb-4 ms-4">{paragraph}</p>
+                        <p key={paragraph.toString()} className={classNames("mb-4 ms-4", styles.bodyParagraph)}>{paragraph}</p>
                     );
                 })}
             </section>
