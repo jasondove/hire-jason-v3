@@ -1,9 +1,9 @@
 const appAdjectives = [
-    'fast',
-    'secure',
-    'beautiful',
-    'fun',
-    'useful',
+    'fast.',
+    'secure.',
+    'beautiful.',
+    'fun!',
+    'useful.',
 ];
 
 const typewritePauseMs = 2000;

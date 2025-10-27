@@ -25,7 +25,7 @@ const Header: React.FunctionComponent = () => {
 
         isTyping.current = true;
         typer.current
-            .typeString(` ${getAdjectiveFromQueue()}.`)
+            .typeString(` ${getAdjectiveFromQueue()}`)
             .pauseFor(typewritePauseMs)
             .deleteAll()
             .callFunction(() => isTyping.current = false)
