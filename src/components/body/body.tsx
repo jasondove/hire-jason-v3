@@ -11,8 +11,9 @@ const Body: React.FunctionComponent = () => {
             <section className="px-4 md:px-0 mb-16 text-text-subtle">
                 <h3 className="block md:hidden ms-4 mb-4 font-bold text-text">About Me</h3>
                 {bodyParagraphs.map((paragraph) => {
+                    let key = Array.isArray(paragraph.props.children) ? paragraph.props.children[0] : paragraph.props.children;
                     return (
-                        <p key={paragraph.toString()} className={classNames("mb-4 ms-4", styles.bodyParagraph)}>{paragraph}</p>
+                        <p key={key} className={classNames("mb-4 ms-4", styles.bodyParagraph)}>{paragraph}</p>
                     );
                 })}
             </section>
